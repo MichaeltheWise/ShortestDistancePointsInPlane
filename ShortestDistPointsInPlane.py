@@ -53,7 +53,7 @@ class MinimumDistanceCalculator:
             while j < size and strip_list[j].y - strip_list[i].y < minimum:
                 if dist(strip_list[i], strip_list[j]) < minimum:
                     minimum = dist(strip_list[i], strip_list[j])
-                    j += 1
+                j += 1
         return minimum
 
     def _minimum_distance(self, point_list):
